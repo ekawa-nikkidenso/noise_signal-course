@@ -1,0 +1,16 @@
+title: noise_signal
+description: reinforced learning of noise signals
+template:
+  repo: noise_signal-template
+  name: noise_signal
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
